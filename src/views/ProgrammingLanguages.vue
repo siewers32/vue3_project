@@ -70,9 +70,7 @@ export default {
             let currentObj = this;
             let newItem = this.item;
             console.log(this.item)
-            this.axios.post(this.api_url, { 
-                    newItem
-                })
+            axios.post(this.api_url, newItem)
                 .then(function (response) {
                     console.log(response);
                 })
